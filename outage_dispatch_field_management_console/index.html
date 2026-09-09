@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#45464d",
+          "primary-container": "#0f172a",
+          "on-secondary-container": "#5b3800",
+          "tertiary-container": "#001b21",
+          "inverse-primary": "#565e74",
+          "outline": "#909097",
+          "on-error-container": "#ffdad6",
+          "surface-container-high": "#1f2a3c",
+          "on-surface-variant": "#c6c6cd",
+          "error-container": "#93000a",
+          "surface": "#081425",
+          "surface-container-lowest": "#040e1f",
+          "on-tertiary-fixed": "#001f26",
+          "tertiary": "#4cd7f6",
+          "secondary-container": "#ee9800",
+          "tertiary-fixed": "#acedff",
+          "on-primary-container": "#798098",
+          "inverse-surface": "#d8e3fb",
+          "on-primary-fixed-variant": "#3f465c",
+          "on-primary": "#283044",
+          "surface-dim": "#081425",
+          "surface-variant": "#2a3548",
+          "primary-fixed": "#dae2fd",
+          "on-secondary-fixed-variant": "#653e00",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "on-primary-fixed": "#131b2e",
+          "primary": "#bec6e0",
+          "secondary-fixed-dim": "#ffb95f",
+          "on-surface": "#d8e3fb",
+          "surface-container-highest": "#2a3548",
+          "on-secondary-fixed": "#2a1700",
+          "error": "#ffb4ab",
+          "on-error": "#690005",
+          "secondary-fixed": "#ffddb8",
+          "on-secondary": "#472a00",
+          "surface-container-low": "#111c2d",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "on-tertiary-container": "#008da5",
+          "surface-bright": "#2f3a4c",
+          "surface-container": "#152031",
+          "on-tertiary": "#003640",
+          "background": "#081425",
+          "on-background": "#d8e3fb",
+          "secondary": "#ffb95f",
+          "surface-tint": "#bec6e0",
+          "primary-fixed-dim": "#bec6e0",
+          "inverse-on-surface": "#263143"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "card-padding-spacious": "1.25rem",
+          "screen-margin-mobile": "1rem",
+          "space-3xl": "2.5rem",
+          "space-lg": "1.25rem",
+          "space-2xs": "0.25rem",
+          "space-xs": "0.5rem",
+          "space-2xl": "2rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "card-padding-standard": "1rem",
+          "screen-margin-tablet": "1.5rem",
+          "card-padding-compact": "0.75rem",
+          "space-xl": "1.5rem"
+        },
+        "fontFamily": {
+          "body-sm": [
+            "Inter"
+          ],
+          "metric-num": [
+            "Inter"
+          ],
+          "display-lg": [
+            "Inter"
+          ],
+          "display-lg-mobile": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "metric-num": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low flex flex-col justify-between z-50 shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-lg text-label-lg text-on-surface tracking-wide uppercase">SCADA Net: Active</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-tertiary">E-3 IND</span></div><nav class="px-space-xs py-space-sm flex flex-col gap-space-2xs" data-active-classes="bg-surface-container-high text-secondary font-label-lg"><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-metrics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">Overview Metrics</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2.5 rounded-lg transition-colors bg-surface-container-high text-secondary font-label-lg" data-path="outage-dispatch" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">bolt</span><span class="font-label-md text-label-md">Outage Dispatch</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container">3 Active</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="revenue-and-reconciliation" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-label-md text-label-md">Revenue &amp; Reconciliation</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary">5 Flagged</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="live-gis-outage-map" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-label-md text-label-md">Live GIS Outage Map</span></div><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="new-connection-requests" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">electrical_services</span><span class="font-label-md text-label-md">New Connections</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-tertiary">12 New</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="section-system-logs-and-audit" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-md text-label-md">Section Logs &amp; Audit</span></div></a></nav></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-xs"><div class="p-space-xs rounded bg-surface-container-high flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Duty Shift A</span><span class="font-body-sm text-body-sm text-on-surface">06:00 - 14:00 IST</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-tertiary">Active</span></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-2xs"><button class="px-2 py-1 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary" type="button">EN</button><button class="px-2 py-1 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">ಕನ್ನಡ</button></div><div class="flex items-center gap-space-xs"><button aria-label="Settings" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button aria-label="Support" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">help_outline</span></button></div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-low/95 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="BESCOM Next Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wa4CE8fJPGXIDUTuihgEeNbdrO-pxZQrgUD0yoMLPuVlBEoqca3XEBc2vhgRgaqyXzM_ooOzIVLBBV3WDM5wLyNown235D--PVehAiSLstwCR9XD1utFztt0sfdDonspAOEh5NfVE7LFB-vJQvbXj7p7zYj_mehAgBc0QSL7LzMRFSp9Tz-YywYlsrpeD5P_XJ5uKHjeZ_vFy9E9lD_dR-FeRrmK7i1915G1RvLTKQ0MKpl7jV0-R4oL0"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">BESCOM Ops Console</span><span class="font-label-sm text-label-sm text-on-surface-variant">Govt of Karnataka • Smart Grid Operations</span></div></div><div class="h-6 w-px bg-outline-variant"></div><button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-tertiary text-[18px]">location_city</span><span class="font-label-sm text-label-sm">E3 Sub-Division - Indiranagar (Ward 112/114)</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button></div><div class="flex items-center gap-space-md"><div class="relative w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline pl-9 pr-space-sm py-1.5 rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-tertiary transition-all" placeholder="Search RR No, Feeder ID, Ticket, Txn Ref..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">BBPS: <span class="text-on-surface font-semibold">99.98% (42ms)</span></span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">SCADA: <span class="text-secondary font-semibold">Synced</span></span></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg bg-error-container/30 text-error hover:bg-error-container/50 transition-colors animate-pulse" type="button"><span class="material-symbols-outlined text-[16px]">warning</span><span class="font-label-sm text-label-sm">1912 Broadcast Active</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Ramesh K. Rao</span><span class="font-label-sm text-label-sm text-on-surface-variant">Section Officer (E-3)</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-tertiary" src="https://lh3.googleusercontent.com/aida/AEtjO1XTarXp5U9w9mIKknz-JTTs97PtrtvN_KRqNynJN-yLn_Si1wh9kc-jlYYO0L8M8ygXC7gwx9jWy9n1uyTFUetnvG5zoIskCRxSE-pGpCMkI9lqzIOL7fe_H5E7M-JuM45fLT0v9Pq7TyAnsn_imb1yKnBnpMlDsoEkJnIcAzK8IpcAkI__upp5YaGPt5Sc5DW8aGcYIMc8cVo2F3U_t3qpJJSIAKFzKla6mvJyjnM8DVddH1ChBBc_zZo"/></div></div></header><main class="w-full pt-16 px-space-lg pb-space-2xl bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="flex flex-col xl:flex-row gap-space-lg w-full">
+<!-- LEFT PANEL: 60% GIS TELEMETRY & FEEDER VISUALIZATION -->
+<div class="w-full xl:w-[60%] flex flex-col gap-space-md">
+<!-- Operational Banner & Fast Substation Status -->
+<div class="p-space-card-standard rounded-xl bg-surface-container flex flex-wrap items-center justify-between gap-space-sm shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">power_settings_new</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Indiranagar 66/11kV Substation</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-tertiary-container text-tertiary">NOC Master Grid</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zone: Bangalore East • SCADA Feed: In-Sync (38ms latency)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Grid Frequency</span>
+<span class="font-label-lg text-label-lg text-tertiary font-bold">49.98 Hz</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub-Div Load</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">28.4 MW / 32 MW</span>
+</div>
+</div>
+</div>
+<!-- Live Interactive GIS Simulation Map Container -->
+<div class="relative w-full h-[620px] rounded-xl overflow-hidden bg-surface-container-lowest shadow-xl flex flex-col justify-between">
+<!-- Underlying Real-world Street Canvas Pattern with data-location -->
+<div class="absolute inset-0 opacity-30 pointer-events-none" data-location="Indiranagar, Bangalore, Karnataka" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKXjnudvvlmHDvUlNZ4wwhtAcWl9fAYr9rPTfTEmx6DP1ATXfOOEgHG63haVZIoWAoK0idEmMNjlRNumxF8rINVXzbau11DOFXbQo2PkoCgq6fyEoUPK6PGOj90DQZLx7fzV8W182wSbKrOlS6Rx1JYbbCdX2HdH5saz9jveDfl846DIw96haxDtBUl1TuhEe_BWVajXJxR_SQSUk4S_rWtWUaA_fYMQ4mrzlGoy0qiIesLOnyunXh'); background-size: cover; background-position: center;"></div>
+<!-- Vector Map Schematics & Animated Feeder Bus Overlay -->
+<svg class="absolute inset-0 w-full h-full pointer-events-auto" fill="none" viewbox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Glow Filters for Active & Tripped Lines -->
+<filter height="140%" id="glow-trip" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#93000a" flood-opacity="0.9" stddeviation="6"></fedropshadow>
+</filter>
+<filter height="140%" id="glow-warn" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#ee9800" flood-opacity="0.8" stddeviation="5"></fedropshadow>
+</filter>
+<filter height="140%" id="glow-active" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#4cd7f6" flood-opacity="0.6" stddeviation="4"></fedropshadow>
+</filter>
+<!-- Gradient Line Stems -->
+<lineargradient gradientunits="userSpaceOnUse" id="feeder-f103" x1="450" x2="210" y1="280" y2="440">
+<stop offset="0%" stop-color="#ee9800"></stop>
+<stop offset="60%" stop-color="#ffb4ab"></stop>
+<stop offset="100%" stop-color="#93000a"></stop>
+</lineargradient>
+</defs>
+<!-- Indiranagar Road Topology (Simulated Basemap Geometries) -->
+<g opacity="0.4" stroke="#2a3548" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+<!-- 100ft Road Corridor -->
+<path d="M 450 40 L 450 580"></path>
+<!-- CMH Road Transverse -->
+<path d="M 60 190 L 840 190"></path>
+<!-- 12th Main Road -->
+<path d="M 280 120 L 280 540"></path>
+<!-- Old Airport Road -->
+<path d="M 80 500 L 820 420"></path>
+<!-- Domlur Intermediate Arterials -->
+<path d="M 640 110 L 760 520"></path>
+<path d="M 280 340 L 640 340"></path>
+</g>
+<!-- Sub-Ward Area Polygons (Ward 112 & Ward 114) -->
+<polygon fill="#152031" fill-opacity="0.35" points="120,80 380,80 340,360 80,320"></polygon>
+<polygon fill="#0f172a" fill-opacity="0.4" points="480,100 810,120 780,420 460,380"></polygon>
+<!-- Feeder Network Traces -->
+<!-- 1. FEEDER F-102 (Energized - Indiranagar North) -->
+<path d="M 450 280 L 450 190 L 280 190 L 210 120" filter="url(#glow-active)" stroke="#4cd7f6" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- 2. FEEDER F-104 (Energized - CMH Road Commercial) -->
+<path d="M 450 280 L 590 280 L 680 190 L 780 190" stroke="#4cd7f6" stroke-dasharray="8 4" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- 3. FEEDER F-105 (Energized - Domlur Ring Road) -->
+<path d="M 450 280 L 520 380 L 680 430 L 790 490" stroke="#4cd7f6" stroke-linecap="round" stroke-width="3"></path>
+<!-- 4. FEEDER F-108 (Load Shedding / Amber Corridor - 100ft Road) -->
+<path d="M 450 280 L 450 490" filter="url(#glow-warn)" stroke="#ee9800" stroke-linecap="round" stroke-width="4"></path>
+<!-- 5. FEEDER F-103 (TRIPPED / CRITICAL BLACKOUT - HAL 2nd Stage) -->
+<path class="animate-pulse" d="M 450 280 L 370 340 L 280 340 L 230 430 L 160 450" filter="url(#glow-trip)" stroke="#ffb4ab" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Transformer Nodes & substations -->
+<!-- Central 66/11kV Substation Hub -->
+<circle cx="450" cy="280" fill="#0f172a" r="16" stroke="#4cd7f6" stroke-width="3"></circle>
+<circle class="animate-ping" cx="450" cy="280" fill="#4cd7f6" r="7"></circle>
+<circle cx="450" cy="280" fill="#4cd7f6" r="6"></circle>
+<!-- Distribution Transformers (DTR Nodes) -->
+<rect fill="#4cd7f6" height="12" rx="2" width="12" x="274" y="184"></rect>
+<rect fill="#4cd7f6" height="12" rx="2" width="12" x="674" y="184"></rect>
+<rect fill="#4cd7f6" height="12" rx="2" width="12" x="514" y="374"></rect>
+<rect fill="#ee9800" height="12" rx="2" width="12" x="444" y="484"></rect>
+<!-- TRIPPED FAULT POINT (Cable Puncture on F-103) -->
+<g transform="translate(230, 430)">
+<circle class="animate-ping" cx="0" cy="0" fill="#93000a" fill-opacity="0.35" r="22"></circle>
+<circle cx="0" cy="0" fill="#93000a" r="13"></circle>
+<path d="M -3 -6 L 4 -1 L -1 1 L 3 7 L -4 2 L 0 -1 Z" fill="#ffdad6"></path>
+</g>
+<!-- Squad Geo-Pings (Field Teams) -->
+<!-- Squad 4 (Basavaraj - En Route) -->
+<g transform="translate(275, 410)">
+<circle cx="0" cy="0" fill="#ee9800" r="8"></circle>
+<circle cx="0" cy="0" fill="#081425" r="3"></circle>
+</g>
+<!-- Squad 2 (Manjunath) -->
+<g transform="translate(620, 240)">
+<circle cx="0" cy="0" fill="#798098" r="6"></circle>
+</g>
+</svg>
+<!-- Floating HUD Overlays (Map Controls & Layers) -->
+<div class="relative z-10 p-space-md flex items-start justify-between pointer-events-none">
+<!-- Layer Toggles -->
+<div class="pointer-events-auto flex flex-col gap-space-xs bg-surface-container-high/90 backdrop-blur-md p-space-xs rounded-xl shadow-lg">
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-tertiary font-label-sm text-label-sm" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              11kV HT Feeder Lines
+            </button>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+              DTR Transformers (48)
+            </button>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-error-container/40 text-error font-label-sm text-label-sm" type="button">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+              Outage Heatmap (340 reports)
+            </button>
+</div>
+<!-- Map View & Zoom Utility Hub -->
+<div class="pointer-events-auto flex flex-col items-end gap-space-xs">
+<div class="flex items-center bg-surface-container-high/90 backdrop-blur-md rounded-xl p-1 shadow-lg">
+<button aria-label="Zoom in" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="w-px h-4 bg-outline-variant"></div>
+<button aria-label="Zoom out" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<div class="w-px h-4 bg-outline-variant"></div>
+<button aria-label="Center grid" class="w-8 h-8 rounded-lg flex items-center justify-center text-tertiary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+</div>
+<div class="px-space-sm py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-on-surface-variant font-label-sm text-label-sm">
+              Lat: 12.9784° N • Long: 77.6408° E
+            </div>
+</div>
+</div>
+<!-- Selected Feeder Telemetry Floating NOC Drawer -->
+<div class="relative z-10 m-space-md p-space-card-standard rounded-xl bg-surface-container-high/95 backdrop-blur-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-error animate-ping"></div>
+<span class="font-headline-sm text-headline-sm text-error font-bold">Feeder #F-103 Lockout</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-semibold">11kV Radial Outage</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SCADA Breaker:</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-lowest text-tertiary">VCB-04 TRIPPED</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-2xs">
+<div class="p-space-xs rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Trip Registered</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">14:08:12 IST</span>
+<span class="font-body-sm text-body-sm text-error">24 mins elapsed</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Consumers Down</span>
+<span class="font-label-lg text-label-lg text-error font-bold">1,420 Homes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ward 112 (HAL 2nd)</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fault Nature</span>
+<span class="font-label-lg text-label-lg text-secondary font-semibold">Phase-to-Ground</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cable joint failure</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target ETR</span>
+<span class="font-label-lg text-label-lg text-tertiary font-bold">15:15 IST</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-escalation: 35m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Feeder Fleet Mini Status Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">F-102 (CMH North)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">4.8 MW • Stable</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">F-104 (12th Main)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">3.9 MW • Stable</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">F-108 (100ft Rd)</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Peak Shedding</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">F-105 (Domlur)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">5.2 MW • Stable</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: 40% TICKET DISPATCH QUEUE & FIELD CREW ASSIGNMENT -->
+<div class="w-full xl:w-[40%] flex flex-col gap-space-md">
+<!-- Incident Queue Header with Filter Pills -->
+<div class="p-space-card-standard rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">crisis_alert</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Incident Queue</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-bold">3 Critical</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">11 Mod</span>
+</div>
+<button class="text-tertiary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+            Live (15s)
+          </button>
+</div>
+<!-- Filter Pills Bar -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm whitespace-nowrap" type="button">
+            All Feeder Trips (3)
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors" type="button">
+            Ward 112 (HAL)
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors" type="button">
+            Ward 114 (Doopanahalli)
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors" type="button">
+            DTR Alarms
+          </button>
+</div>
+</div>
+<!-- INCIDENT CARD 1: EXPANDED / PRIMARY FOCUS -->
+<div class="rounded-xl bg-surface-container-high shadow-lg flex flex-col overflow-hidden">
+<!-- Red Accent Critical Indicator Bar -->
+<div class="h-1.5 w-full bg-error"></div>
+<div class="p-space-card-spacious flex flex-col gap-space-md">
+<!-- Incident Header Meta -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">#INC-BLR-8821</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Priority 1 (Emergency)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Feeder F-103 • HAL 2nd Stage (Ward 112)</span>
+</div>
+<div class="px-space-xs py-1 rounded bg-surface-container-lowest text-error font-label-sm text-label-sm font-semibold whitespace-nowrap">
+              24m ago
+            </div>
+</div>
+<!-- Problem Description Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">electrical_services</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">11kV Cable Joint Puncture near 12th Main cross</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Underground cable fault detected by distance relay. 340 commercial &amp; domestic meters offline.</span>
+</div>
+</div>
+<!-- Lineman Squad Assignment Module -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">
+                Assign Emergency Quick Response Squad (Lineman)
+              </label>
+<span class="font-label-sm text-label-sm text-tertiary">GIS Auto-Locate</span>
+</div>
+<!-- Squad Selector Card Dropdown -->
+<div class="flex flex-col gap-space-xs">
+<!-- Option 1: RECOMMENDED & SELECTED -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-label-sm">
+                    T4
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Basavaraj N. (Team #4)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">Recommended</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary">0.8 km away • Hydraulic Ladder Van • ETA 8 mins</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<!-- Option 2: Alternate -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest opacity-60 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold text-label-sm">
+                    T2
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Manjunath K. (Team #2)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.4 km away • On Ticket #8819 (100ft Rd)</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface px-2 py-1 rounded bg-surface-container-high transition-colors" type="button">
+                  Select
+                </button>
+</div>
+<!-- Option 3: Alternate -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest opacity-60 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold text-label-sm">
+                    T7
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Suresh Gowda (Team #7)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3.1 km away • Idle at Indiranagar Substation</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface px-2 py-1 rounded bg-surface-container-high transition-colors" type="button">
+                  Select
+                </button>
+</div>
+</div>
+</div>
+<!-- Dispatch Action Button -->
+<button class="w-full py-3 rounded-lg bg-secondary text-primary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs hover:bg-secondary-fixed transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[20px]">cell_tower</span>
+            Dispatch Squad 4 &amp; Radio Ping (Push Telemetry)
+          </button>
+<!-- Security & Closeout Verification Section -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Consumer OTP Verification Protocol</span>
+</div>
+<!-- Simulated Active Toggle -->
+<div class="w-10 h-5 rounded-full bg-secondary flex items-center justify-end px-0.5 cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-primary-container"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              Mandatory citizen confirmation before SCADA breaker auto-reclose. Code sent to primary complainant.
+            </p>
+<div class="p-space-xs rounded bg-surface-container-lowest flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Complainant: Ramesh K. Rao</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+91 98450•••••</span>
+</div>
+<!-- 4-Digit OTP Entry Simulator -->
+<div class="flex items-center gap-space-xs mt-1">
+<input class="w-10 h-10 rounded-lg bg-surface-container-high text-center font-metric-num text-headline-sm text-secondary font-bold focus:outline-none" maxlength="1" type="text" value="7"/>
+<input class="w-10 h-10 rounded-lg bg-surface-container-high text-center font-metric-num text-headline-sm text-secondary font-bold focus:outline-none" maxlength="1" type="text" value="3"/>
+<input class="w-10 h-10 rounded-lg bg-surface-container-high text-center font-metric-num text-headline-sm text-on-surface-variant font-bold focus:outline-none" maxlength="1" placeholder="•" type="text"/>
+<input class="w-10 h-10 rounded-lg bg-surface-container-high text-center font-metric-num text-headline-sm text-on-surface-variant font-bold focus:outline-none" maxlength="1" placeholder="•" type="text"/>
+<button class="ml-auto px-space-sm py-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  Resend SMS
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INCIDENT CARD 2: Moderate Priority / DTR Warning -->
+<div class="p-space-card-standard rounded-xl bg-surface-container shadow-md flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">#INC-BLR-8824</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary font-medium">Transformer Alarm</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42m ago</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">DTR-208: Oil Leakage &amp; Thermal Smoke Alert</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100ft Road cross junction • Temp: 92°C (Critical)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">oil_barrel</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-high mt-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">local_shipping</span>
+<span class="font-label-sm text-label-sm text-on-surface">Squad #2 En Route (ETA 12m)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary hover:underline">View Telemetry →</span>
+</div>
+</div>
+<!-- INCIDENT CARD 3: Low-Moderate Priority / Service Snapped -->
+<div class="p-space-card-standard rounded-xl bg-surface-container shadow-md flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">#INC-BLR-8829</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Low Tension (LT)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1h 10m ago</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Service Drop Wire Snapped due to Tree Fall</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Doopanahalli Main Rd (Ward 114) • 8 Consumers isolated</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[24px]">park</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-high mt-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[16px]">engineering</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Squad #5 Assigned • Tree Clearance in progress</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary hover:underline">Details →</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

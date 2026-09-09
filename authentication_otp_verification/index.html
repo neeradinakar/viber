@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#1f2a3c", "error-container": "#93000a", "on-tertiary-fixed": "#001f26", "surface-container-highest": "#2a3548", "tertiary-fixed": "#acedff", "primary-fixed": "#dae2fd", "tertiary": "#4cd7f6", "on-error": "#690005", "surface-container-low": "#111c2d", "inverse-surface": "#d8e3fb", "secondary-container": "#ee9800", "tertiary-container": "#001b21", "on-background": "#d8e3fb", "on-primary-container": "#798098", "on-primary-fixed": "#131b2e", "on-tertiary-container": "#008da5", "on-secondary-container": "#5b3800", "on-error-container": "#ffdad6", "on-tertiary": "#003640", "tertiary-fixed-dim": "#4cd7f6", "inverse-on-surface": "#263143", "secondary": "#ffb95f", "error": "#ffb4ab", "inverse-primary": "#565e74", "on-tertiary-fixed-variant": "#004e5c", "primary-container": "#0f172a", "on-secondary": "#472a00", "on-surface-variant": "#c6c6cd", "primary-fixed-dim": "#bec6e0", "outline-variant": "#45464d", "primary": "#bec6e0", "outline": "#909097", "surface-dim": "#081425", "surface-bright": "#2f3a4c", "surface-variant": "#2a3548", "on-secondary-fixed-variant": "#653e00", "on-secondary-fixed": "#2a1700", "on-surface": "#d8e3fb", "surface": "#081425", "surface-container": "#152031", "surface-container-lowest": "#040e1f", "surface-tint": "#bec6e0", "secondary-fixed-dim": "#ffb95f", "background": "#081425", "on-primary": "#283044", "secondary-fixed": "#ffddb8", "on-primary-fixed-variant": "#3f465c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.5rem", "screen-margin-mobile": "1rem", "card-padding-standard": "1rem", "space-xl": "1.5rem", "space-2xs": "0.25rem", "card-padding-compact": "0.75rem", "space-3xl": "2.5rem", "space-2xl": "2rem", "space-lg": "1.25rem", "space-sm": "0.75rem", "card-padding-spacious": "1.25rem", "screen-margin-tablet": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-lg": ["Inter"], "label-md": ["Inter"], "metric-num": ["Inter"], "display-lg-mobile": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "display-lg": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "metric-num": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background text-on-surface antialiased flex flex-col min-h-screen pt-safe pb-safe"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full text-on-surface">
+<div class="w-full max-w-md mx-auto px-screen-margin-mobile py-space-sm space-y-space-md">
+<!-- Top Utility & Language Bar -->
+<div class="flex items-center justify-between gap-space-xs">
+<!-- Language Pill Switcher -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface transition-colors duration-200" id="langToggle" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">translate</span>
+<span class="font-label-md text-label-md tracking-wide" id="langText">
+<span class="text-secondary font-bold">ENG</span>
+<span class="text-outline mx-0.5">|</span>
+<span class="opacity-80">ಕನ್ನಡ</span>
+</span>
+</button>
+<!-- Emergency Helpline 1912 Badge -->
+<a class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-tertiary" href="tel:1912">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="material-symbols-outlined text-[15px]">call</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase">1912 Helpline</span>
+</a>
+</div>
+<!-- Hero Brand Section with BESCOM Logo & Bengaluru Electric Backdrop -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-card-padding-spacious shadow-lg">
+<div class="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-tertiary/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-8 -bottom-8 w-36 h-36 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-center gap-space-md">
+<div class="relative flex-shrink-0 w-16 h-16 rounded-xl bg-surface-container-lowest p-2 shadow-inner">
+<img alt="BESCOM Next Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wa4CE8fJPGXIDUTuihgEeNbdrO-pxZQrgUD0yoMLPuVlBEoqca3XEBc2vhgRgaqyXzM_ooOzIVLBBV3WDM5wLyNown235D--PVehAiSLstwCR9XD1utFztt0sfdDonspAOEh5NfVE7LFB-vJQvbXj7p7zYj_mehAgBc0QSL7LzMRFSp9Tz-YywYlsrpeD5P_XJ5uKHjeZ_vFy9E9lD_dR-FeRrmK7i1915G1RvLTKQ0MKpl7jV0-R4oL0"/>
+<span class="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-secondary text-[10px] font-bold text-on-secondary shadow">⚡</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="inline-block px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary font-label-sm text-label-sm">BENGALURU SMART GRID</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface truncate" id="heroHeading">
+            Welcome • ಸುಸ್ವಾಗತ
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate" id="heroSubheading">
+            Powering Karnataka's Silicon Capital
+          </p>
+</div>
+</div>
+</div>
+<!-- Authentication Card Stack -->
+<div class="bg-surface-container-high rounded-xl p-card-padding-spacious shadow-md space-y-space-md">
+<!-- Stepper / Current Mode Banner -->
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold flex items-center gap-1" id="stepLabel">
+<span class="material-symbols-outlined text-[14px]">cell_tower</span> Mobile Verification
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+          Step 1 of 2
+        </span>
+</div>
+<!-- Mobile Number Input Stage -->
+<div class="space-y-space-xs" id="mobileSection">
+<label class="block font-label-md text-label-md text-on-surface" for="phoneNumber" id="phoneLabel">
+          Registered Mobile Number / ಮೊಬೈಲ್ ಸಂಖ್ಯೆ
+        </label>
+<div class="flex items-center gap-space-xs">
+<!-- Country code badge with Indian Flag -->
+<div class="flex items-center gap-1.5 px-3 py-3 rounded-lg bg-surface-container-lowest text-on-surface flex-shrink-0 shadow-inner">
+<svg class="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0" viewbox="0 0 24 16">
+<rect fill="#FF9933" height="5.33" width="24"></rect>
+<rect fill="#FFFFFF" height="5.33" width="24" y="5.33"></rect>
+<rect fill="#138808" height="5.33" width="24" y="10.66"></rect>
+<circle cx="12" cy="8" fill="#000080" r="2.2"></circle>
+</svg>
+<span class="font-label-lg text-label-lg font-bold tracking-tight">+91</span>
+</div>
+<!-- Input field -->
+<div class="relative flex-1">
+<input class="w-full py-3 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg tracking-wider placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-all shadow-inner" id="phoneNumber" inputmode="numeric" maxlength="10" placeholder="98765 43210" type="tel" value="9845012345"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="clearPhoneBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1" id="linkedMeterHint">
+<span class="material-symbols-outlined text-[14px] text-tertiary">offline_bolt</span>
+            Linked to RR#: <span class="text-on-surface font-semibold">W3-84729-N</span>
+</p>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Auto-detected</span>
+</div>
+</div>
+<!-- OTP Verification Card Panel (Shown in energized state) -->
+<div class="pt-space-xs space-y-space-sm" id="otpSection">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" id="otpLabel">
+            Enter 6-Digit OTP / ಒಟಿಪಿ ನಮೂದಿಸಿ
+          </label>
+<!-- Auto-reading Simulation Pill -->
+<span class="flex items-center gap-1 text-[11px] font-label-sm text-tertiary bg-tertiary-container px-2 py-0.5 rounded-full animate-pulse">
+<span class="material-symbols-outlined text-[12px]">sensors</span> Auto-reading
+          </span>
+</div>
+<!-- 6-Digit Box Cluster -->
+<div class="grid grid-cols-6 gap-1.5 sm:gap-2">
+<input class="otp-box h-12 rounded-lg bg-surface-container-lowest text-center font-headline-sm text-headline-sm text-secondary font-bold shadow-inner focus:outline-none focus:bg-surface-container" inputmode="numeric" maxlength="1" type="text" value="5"/>
+<input class="otp-box h-12 rounded-lg bg-surface-container-lowest text-center font-headline-sm text-headline-sm text-secondary font-bold shadow-inner focus:outline-none focus:bg-surface-container" inputmode="numeric" maxlength="1" type="text" value="8"/>
+<input class="otp-box h-12 rounded-lg bg-surface-container-lowest text-center font-headline-sm text-headline-sm text-secondary font-bold shadow-inner focus:outline-none focus:bg-surface-container" inputmode="numeric" maxlength="1" type="text" value="2"/>
+<input class="otp-box h-12 rounded-lg bg-surface-container-lowest text-center font-headline-sm text-headline-sm text-secondary font-bold shadow-inner focus:outline-none focus:bg-surface-container" inputmode="numeric" maxlength="1" type="text" value="9"/>
+<input class="otp-box h-12 rounded-lg bg-surface-container-lowest text-center font-headline-sm text-headline-sm text-secondary font-bold shadow-inner focus:outline-none focus:bg-surface-container" inputmode="numeric" maxlength="1" type="text" value=""/>
+<input class="otp-box h-12 rounded-lg bg-surface-container-lowest text-center font-headline-sm text-headline-sm text-secondary font-bold shadow-inner focus:outline-none focus:bg-surface-container" inputmode="numeric" maxlength="1" type="text" value=""/>
+</div>
+<!-- Resend Countdown Timer Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<span id="timerText">Resend OTP in <span class="text-on-surface font-semibold tracking-wider font-mono">01:48</span></span>
+</div>
+<button class="font-label-sm text-label-sm text-outline opacity-60 pointer-events-none hover:text-secondary transition-colors" id="resendBtn" type="button">
+            Resend SMS
+          </button>
+</div>
+</div>
+<!-- High-Contrast Amber CTA -->
+<div class="pt-2">
+<button class="w-full h-12 rounded-xl bg-secondary hover:bg-secondary-container text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-lg transition-all active:scale-[0.99]" id="verifyBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span id="btnVerifyText">Verify &amp; Continue</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Alternative Login Option -->
+<div class="pt-1 text-center">
+<button class="font-label-md text-label-md text-tertiary hover:text-tertiary-fixed transition-colors inline-flex items-center gap-1.5 py-1 px-3 rounded-lg hover:bg-surface-container" id="altLoginBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">pin</span>
+<span id="altLoginText">Sign in with Consumer ID / RR Number</span>
+</button>
+</div>
+</div>
+<!-- Quick Services Strip: Instant Bill Pay & New Connection -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="p-card-padding-compact rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-left flex items-center gap-2.5" type="button">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold truncate" id="quickPayTitle">Quick Pay</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate" id="quickPaySub">No login needed</p>
+</div>
+</button>
+<button class="p-card-padding-compact rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-left flex items-center gap-2.5" type="button">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold truncate" id="outageStatusTitle">Outage Map</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate" id="outageStatusSub">Live feeder status</p>
+</div>
+</button>
+</div>
+<!-- Security Trust Mark & Official Karnataka Seal Footer -->
+<div class="pt-space-xs pb-space-md text-center space-y-2">
+<div class="flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span class="font-label-sm text-label-sm tracking-wide">256-Bit SSL End-to-End Encrypted</span>
+</div>
+<p class="font-body-sm text-[11px] text-outline" id="footerGovtText">
+        Government of Karnataka • BESCOM Smart Metering System
+      </p>
+<div class="flex items-center justify-center gap-4 text-[11px] text-outline pt-1">
+<a class="hover:text-tertiary transition-colors" href="#terms">Terms of Tariff</a>
+<span>•</span>
+<a class="hover:text-tertiary transition-colors" href="#privacy">Data Privacy</a>
+<span>•</span>
+<a class="hover:text-tertiary transition-colors" href="#substations">Bangalore Sub-Divisions</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let isKannada = false;
+
+    const langData = {
+      en: {
+        toggle: '<span class="text-secondary font-bold">ENG</span><span class="text-outline mx-0.5">|</span><span class="opacity-80">ಕನ್ನಡ</span>',
+        heroHeading: 'Welcome • ಸುಸ್ವಾಗತ',
+        heroSub: 'Powering Karnataka\'s Silicon Capital',
+        step: '<span class="material-symbols-outlined text-[14px]">cell_tower</span> Mobile Verification',
+        phoneLabel: 'Registered Mobile Number / ಮೊಬೈಲ್ ಸಂಖ್ಯೆ',
+        linkedMeter: '<span class="material-symbols-outlined text-[14px] text-tertiary">offline_bolt</span> Linked to RR#: <span class="text-on-surface font-semibold">W3-84729-N</span>',
+        otpLabel: 'Enter 6-Digit OTP / ಒಟಿಪಿ ನಮೂದಿಸಿ',
+        timer: 'Resend OTP in <span class="text-on-surface font-semibold tracking-wider font-mono">01:48</span>',
+        verifyBtn: 'Verify & Continue',
+        altLogin: 'Sign in with Consumer ID / RR Number',
+        quickPayTitle: 'Quick Pay',
+        quickPaySub: 'No login needed',
+        outageTitle: 'Outage Map',
+        outageSub: 'Live feeder status',
+        footerGovt: 'Government of Karnataka • BESCOM Smart Metering System'
+      },
+      kn: {
+        toggle: '<span class="opacity-80">ENG</span><span class="text-outline mx-0.5">|</span><span class="text-secondary font-bold">ಕನ್ನಡ</span>',
+        heroHeading: 'ಸುಸ್ವಾಗತ • Welcome',
+        heroSub: 'ಕರ್ನಾಟಕದ ಸಿಲಿಕಾನ್ ರಾಜಧಾನಿಗೆ ನಿರಂತರ ವಿದ್ಯುತ್',
+        step: '<span class="material-symbols-outlined text-[14px]">cell_tower</span> ಮೊಬೈಲ್ ದೃಢೀಕರಣ',
+        phoneLabel: 'ನೋಂದಾಯಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ',
+        linkedMeter: '<span class="material-symbols-outlined text-[14px] text-tertiary">offline_bolt</span> ಸಂಪರ್ಕಿತ RR ಸಂಖ್ಯೆ: <span class="text-on-surface font-semibold">W3-84729-N</span>',
+        otpLabel: '೬-ಅಂಕಿಯ ಒಟಿಪಿ ನಮೂದಿಸಿ',
+        timer: 'ಒಟಿಪಿ ಪುನಃ ಕಳುಹಿಸಲು <span class="text-on-surface font-semibold tracking-wider font-mono">01:48</span>',
+        verifyBtn: 'ದೃಢೀಕರಿಸಿ & ಮುಂದುವರಿಯಿರಿ',
+        altLogin: 'ಗ್ರಾಹಕರ ಐಡಿ / RR ಸಂಖ್ಯೆಯೊಂದಿಗೆ ಪ್ರವೇಶಿಸಿ',
+        quickPayTitle: 'ತ್ವರಿತ ಪಾವತಿ',
+        quickPaySub: 'ಲಾಗಿನ್ ಅಗತ್ಯವಿಲ್ಲ',
+        outageTitle: 'ವಿದ್ಯುತ್ ಕಡಿತ ನಕ್ಷೆ',
+        outageSub: 'ಲೈವ್ ಫೀಡರ್ ಸ್ಥಿತಿ',
+        footerGovt: 'ಕರ್ನಾಟಕ ಸರ್ಕಾರ • ಬೆಸ್ಕಾಂ ಸ್ಮಾರ್ಟ್ ಮೀಟರ್ ಸೇವೆಗಳು'
+      }
+    };
+
+    const toggleBtn = document.getElementById('langToggle');
+    const langText = document.getElementById('langText');
+    const heroHeading = document.getElementById('heroHeading');
+    const heroSub = document.getElementById('heroSubheading');
+    const stepLabel = document.getElementById('stepLabel');
+    const phoneLabel = document.getElementById('phoneLabel');
+    const linkedMeterHint = document.getElementById('linkedMeterHint');
+    const otpLabel = document.getElementById('otpLabel');
+    const timerText = document.getElementById('timerText');
+    const btnVerifyText = document.getElementById('btnVerifyText');
+    const altLoginText = document.getElementById('altLoginText');
+    const quickPayTitle = document.getElementById('quickPayTitle');
+    const quickPaySub = document.getElementById('quickPaySub');
+    const outageStatusTitle = document.getElementById('outageStatusTitle');
+    const outageStatusSub = document.getElementById('outageStatusSub');
+    const footerGovtText = document.getElementById('footerGovtText');
+
+    toggleBtn.addEventListener('click', () => {
+      isKannada = !isKannada;
+      const data = isKannada ? langData.kn : langData.en;
+      langText.innerHTML = data.toggle;
+      heroHeading.textContent = data.heroHeading;
+      heroSub.textContent = data.heroSub;
+      stepLabel.innerHTML = data.step;
+      phoneLabel.textContent = data.phoneLabel;
+      linkedMeterHint.innerHTML = data.linkedMeter;
+      otpLabel.textContent = data.otpLabel;
+      timerText.innerHTML = data.timer;
+      btnVerifyText.textContent = data.verifyBtn;
+      altLoginText.textContent = data.altLogin;
+      quickPayTitle.textContent = data.quickPayTitle;
+      quickPaySub.textContent = data.quickPaySub;
+      outageStatusTitle.textContent = data.outageTitle;
+      outageStatusSub.textContent = data.outageSub;
+      footerGovtText.textContent = data.footerGovt;
+    });
+
+    // Handle OTP Box Focus Shifting
+    const otpBoxes = document.querySelectorAll('.otp-box');
+    otpBoxes.forEach((box, index) => {
+      box.addEventListener('input', (e) => {
+        if (e.target.value.length === 1 && index < otpBoxes.length - 1) {
+          otpBoxes[index + 1].focus();
+        }
+      });
+      box.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace' && !e.target.value && index > 0) {
+          otpBoxes[index - 1].focus();
+        }
+      });
+    });
+
+    // Clear Phone Field
+    const clearBtn = document.getElementById('clearPhoneBtn');
+    const phoneInput = document.getElementById('phoneNumber');
+    if (clearBtn && phoneInput) {
+      clearBtn.addEventListener('click', () => {
+        phoneInput.value = '';
+        phoneInput.focus();
+      });
+    }
+  })();
+</script></main></body></html>

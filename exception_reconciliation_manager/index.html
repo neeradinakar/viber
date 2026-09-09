@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#45464d",
+          "primary-container": "#0f172a",
+          "on-secondary-container": "#5b3800",
+          "tertiary-container": "#001b21",
+          "inverse-primary": "#565e74",
+          "outline": "#909097",
+          "on-error-container": "#ffdad6",
+          "surface-container-high": "#1f2a3c",
+          "on-surface-variant": "#c6c6cd",
+          "error-container": "#93000a",
+          "surface": "#081425",
+          "surface-container-lowest": "#040e1f",
+          "on-tertiary-fixed": "#001f26",
+          "tertiary": "#4cd7f6",
+          "secondary-container": "#ee9800",
+          "tertiary-fixed": "#acedff",
+          "on-primary-container": "#798098",
+          "inverse-surface": "#d8e3fb",
+          "on-primary-fixed-variant": "#3f465c",
+          "on-primary": "#283044",
+          "surface-dim": "#081425",
+          "surface-variant": "#2a3548",
+          "primary-fixed": "#dae2fd",
+          "on-secondary-fixed-variant": "#653e00",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "on-primary-fixed": "#131b2e",
+          "primary": "#bec6e0",
+          "secondary-fixed-dim": "#ffb95f",
+          "on-surface": "#d8e3fb",
+          "surface-container-highest": "#2a3548",
+          "on-secondary-fixed": "#2a1700",
+          "error": "#ffb4ab",
+          "on-error": "#690005",
+          "secondary-fixed": "#ffddb8",
+          "on-secondary": "#472a00",
+          "surface-container-low": "#111c2d",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "on-tertiary-container": "#008da5",
+          "surface-bright": "#2f3a4c",
+          "surface-container": "#152031",
+          "on-tertiary": "#003640",
+          "background": "#081425",
+          "on-background": "#d8e3fb",
+          "secondary": "#ffb95f",
+          "surface-tint": "#bec6e0",
+          "primary-fixed-dim": "#bec6e0",
+          "inverse-on-surface": "#263143"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "card-padding-spacious": "1.25rem",
+          "screen-margin-mobile": "1rem",
+          "space-3xl": "2.5rem",
+          "space-lg": "1.25rem",
+          "space-2xs": "0.25rem",
+          "space-xs": "0.5rem",
+          "space-2xl": "2rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "card-padding-standard": "1rem",
+          "screen-margin-tablet": "1.5rem",
+          "card-padding-compact": "0.75rem",
+          "space-xl": "1.5rem"
+        },
+        "fontFamily": {
+          "body-sm": [
+            "Inter"
+          ],
+          "metric-num": [
+            "Inter"
+          ],
+          "display-lg": [
+            "Inter"
+          ],
+          "display-lg-mobile": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "metric-num": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low flex flex-col justify-between z-50 shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-lg text-label-lg text-on-surface tracking-wide uppercase">SCADA Net: Active</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-tertiary">E-3 IND</span></div><nav class="px-space-xs py-space-sm flex flex-col gap-space-2xs" data-active-classes="bg-surface-container-high text-secondary font-label-lg"><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-metrics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">Overview Metrics</span></div></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="outage-dispatch" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">bolt</span><span class="font-label-md text-label-md">Outage Dispatch</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container">3 Active</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2.5 rounded-lg transition-colors bg-surface-container-high text-secondary font-label-lg" data-path="revenue-and-reconciliation" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-label-md text-label-md">Revenue &amp; Reconciliation</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary">5 Flagged</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="live-gis-outage-map" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-label-md text-label-md">Live GIS Outage Map</span></div><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="new-connection-requests" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">electrical_services</span><span class="font-label-md text-label-md">New Connections</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-tertiary">12 New</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="section-system-logs-and-audit" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-md text-label-md">Section Logs &amp; Audit</span></div></a></nav></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-xs"><div class="p-space-xs rounded bg-surface-container-high flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Duty Shift A</span><span class="font-body-sm text-body-sm text-on-surface">06:00 - 14:00 IST</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-tertiary">Active</span></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-2xs"><button class="px-2 py-1 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary" type="button">EN</button><button class="px-2 py-1 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">ಕನ್ನಡ</button></div><div class="flex items-center gap-space-xs"><button aria-label="Settings" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button aria-label="Support" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">help_outline</span></button></div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-low/95 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="BESCOM Next Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wa4CE8fJPGXIDUTuihgEeNbdrO-pxZQrgUD0yoMLPuVlBEoqca3XEBc2vhgRgaqyXzM_ooOzIVLBBV3WDM5wLyNown235D--PVehAiSLstwCR9XD1utFztt0sfdDonspAOEh5NfVE7LFB-vJQvbXj7p7zYj_mehAgBc0QSL7LzMRFSp9Tz-YywYlsrpeD5P_XJ5uKHjeZ_vFy9E9lD_dR-FeRrmK7i1915G1RvLTKQ0MKpl7jV0-R4oL0"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">BESCOM Ops Console</span><span class="font-label-sm text-label-sm text-on-surface-variant">Govt of Karnataka • Smart Grid Operations</span></div></div><div class="h-6 w-px bg-outline-variant"></div><button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-tertiary text-[18px]">location_city</span><span class="font-label-sm text-label-sm">E3 Sub-Division - Indiranagar (Ward 112/114)</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button></div><div class="flex items-center gap-space-md"><div class="relative w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline pl-9 pr-space-sm py-1.5 rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-tertiary transition-all" placeholder="Search RR No, Feeder ID, Ticket, Txn Ref..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">BBPS: <span class="text-on-surface font-semibold">99.98% (42ms)</span></span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">SCADA: <span class="text-secondary font-semibold">Synced</span></span></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg bg-error-container/30 text-error hover:bg-error-container/50 transition-colors animate-pulse" type="button"><span class="material-symbols-outlined text-[16px]">warning</span><span class="font-label-sm text-label-sm">1912 Broadcast Active</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Ramesh K. Rao</span><span class="font-label-sm text-label-sm text-on-surface-variant">Section Officer (E-3)</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-tertiary" src="https://lh3.googleusercontent.com/aida/AEtjO1XTarXp5U9w9mIKknz-JTTs97PtrtvN_KRqNynJN-yLn_Si1wh9kc-jlYYO0L8M8ygXC7gwx9jWy9n1uyTFUetnvG5zoIskCRxSE-pGpCMkI9lqzIOL7fe_H5E7M-JuM45fLT0v9Pq7TyAnsn_imb1yKnBnpMlDsoEkJnIcAzK8IpcAkI__upp5YaGPt5Sc5DW8aGcYIMc8cVo2F3U_t3qpJJSIAKFzKla6mvJyjnM8DVddH1ChBBc_zZo"/></div></div></header><main class="w-full pt-16 px-space-lg pb-space-2xl bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg">
+<!-- Operational Context Strip & Top Headline -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>Daily Clearing &amp; Settlement Ledger • Cycle: 18 Sep 2026</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant font-mono">BATCH ID: BLR-E3-20260918-C4</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-0.5">
+        Revenue Settlement &amp; Exception Management Console
+      </h1>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-tertiary text-[18px]">sync</span>
+<span class="font-label-md text-label-md">Trigger Bank Settlement Sync</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">file_download</span>
+<span class="font-label-md text-label-md">Export RBI Audit Trail</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-secondary-container text-on-secondary hover:brightness-110 transition-all shadow-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span class="font-label-md text-label-md">Batch Resolve Selected (1)</span>
+</button>
+</div>
+</div>
+<!-- Summary Metric Bento Grid with Inline Micro-Gauges -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Total Inflow Metric -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Gross Inflow</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-tertiary">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</span>
+</div>
+<div class="mt-2 flex items-baseline gap-space-xs">
+<span class="font-metric-num text-metric-num text-on-surface">₹1,42,10,480</span>
+<span class="font-label-sm text-label-sm text-tertiary">+4.2% DoD</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-2 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">48,290 Transactions</span>
+<span class="font-label-sm text-label-sm text-on-surface">UPI: 78.4%</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-2">
+<div class="bg-tertiary h-full w-[88%]"></div>
+</div>
+</div>
+<!-- Matched & Cleared -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Matched &amp; Cleared</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</span>
+</div>
+<div class="mt-2 flex items-baseline gap-space-xs">
+<span class="font-metric-num text-metric-num text-on-surface">₹1,41,85,220</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-highest text-secondary font-bold">99.8%</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-2 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Automated Settlement</span>
+<span class="font-label-sm text-label-sm text-on-surface">48,285 Clean</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-2">
+<div class="bg-secondary h-full w-[99.8%]"></div>
+</div>
+</div>
+<!-- Flagged Exceptions -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-error uppercase tracking-wider font-semibold">Flagged Exceptions</span>
+<span class="p-1.5 rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[20px]">report_problem</span>
+</span>
+</div>
+<div class="mt-2 flex items-baseline gap-space-xs">
+<span class="font-metric-num text-metric-num text-error">₹25,260</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold animate-pulse">5 Items</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-2 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Action required within 4h</span>
+<span class="font-label-sm text-label-sm text-error font-medium">SLA: 1h 45m left</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-2">
+<div class="bg-error h-full w-[24%]"></div>
+</div>
+</div>
+<!-- Auto-Refund Queue -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Auto-Refund Queue</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">currency_exchange</span>
+</span>
+</div>
+<div class="mt-2 flex items-baseline gap-space-xs">
+<span class="font-metric-num text-metric-num text-on-surface">₹4,802</span>
+<span class="font-label-sm text-label-sm text-tertiary">2 Remittances</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-2 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">BBPS Stage 2 Reversal</span>
+<span class="font-label-sm text-label-sm text-on-surface">Scheduled 18:00 IST</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-2">
+<div class="bg-tertiary-fixed h-full w-[45%]"></div>
+</div>
+</div>
+</div>
+<!-- Advanced Toolbar, Filtration Bar & Switch Controls -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Filter Segment Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0">
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary font-bold shadow-sm whitespace-nowrap" type="button">
+          All Exceptions (5)
+        </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors whitespace-nowrap" type="button">
+          Verification Pending (2)
+        </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors whitespace-nowrap" type="button">
+          Duplicate Debit (1)
+        </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors whitespace-nowrap" type="button">
+          Bank Timeout / Delayed UTR (1)
+        </button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors whitespace-nowrap" type="button">
+          Tariff Mismatch (1)
+        </button>
+</div>
+<!-- Quick Metrics Telemetry Pill -->
+<div class="flex items-center gap-space-xs self-end lg:self-auto text-on-surface-variant font-label-sm text-label-sm bg-surface-container-lowest px-3 py-1.5 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>NPCI Switch: <strong class="text-on-surface">Online</strong> (41ms latency)</span>
+</div>
+</div>
+<!-- Dropdowns & Search inputs -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center gap-space-sm pt-2">
+<!-- Search -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline pl-9 pr-space-sm py-2 rounded-lg font-body-sm text-body-sm outline-none focus:bg-surface-container transition-all" placeholder="Filter by Txn ID, RR Number, Consumer Name, or UTR..." type="text"/>
+</div>
+<!-- Gateway Filter -->
+<div class="flex items-center gap-space-xs">
+<div class="relative min-w-[200px]">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface pl-space-md pr-8 py-2 rounded-lg font-body-sm text-body-sm outline-none cursor-pointer">
+<option selected="">All Gateways &amp; Aggregators</option>
+<option>UPI / NPCI Rail Direct</option>
+<option>PhonePe UPI Switch</option>
+<option>Google Pay / Axis Bank</option>
+<option>HDFC NetBanking Direct</option>
+<option>Paytm / BillDesk Engine</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Column Layout" type="button">
+<span class="material-symbols-outlined text-[18px]">view_column</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Filter Presets" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Work Surface: Split View Data Table & Side Inspector -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- Table Column: Spans 8 cols on XL screens -->
+<div class="xl:col-span-8 bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col">
+<!-- Table Header Status Bar -->
+<div class="px-space-md py-3 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-high accent-secondary text-on-secondary" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing 5 Flagged Records</span>
+</label>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Auto-refresh in 48s</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Sort by:</span>
+<button class="text-on-surface font-semibold flex items-center gap-0.5" type="button">
+            Discrepancy Severity <span class="material-symbols-outlined text-[14px]">south</span>
+</button>
+</div>
+</div>
+<!-- Responsive Data Grid -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface">
+<thead class="bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<tr>
+<th class="p-3 w-10 text-center">
+<span class="sr-only">Select</span>
+</th>
+<th class="p-3">Transaction &amp; Time</th>
+<th class="p-3">RR No &amp; Consumer</th>
+<th class="p-3 text-right">Amount</th>
+<th class="p-3">Gateway &amp; UTR</th>
+<th class="p-3">Anomaly Reason</th>
+<th class="p-3 text-center">Operation Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1: Selected & Highlighted in Inspector Drawer -->
+<tr class="bg-surface-container-high/60 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<td class="p-3 text-center">
+<input checked="" class="w-4 h-4 rounded bg-surface-container accent-secondary" type="checkbox"/>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary font-mono">TXN-BLR-2026-98421038</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">14:18:22 IST (Today)</span>
+</div>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Ramesh K. Rao</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RR: 1029384756 • 12th Main Indiranagar</span>
+</div>
+</td>
+<td class="p-3 text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface font-mono">₹2,401.00</span>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">PhonePe UPI / Axis Switch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">UTR: 428901928471</span>
+</div>
+</td>
+<td class="p-3">
+<div class="inline-flex flex-col">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-error-container text-on-error-container w-fit">
+                    Duplicate Debit
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Dual charge at UPI switch</span>
+</div>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:brightness-105 transition-all shadow-sm" type="button">
+                    Reversal
+                  </button>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors" title="Payload Menu" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Verification Pending -->
+<tr class="hover:bg-surface-container-high/40 transition-colors cursor-pointer">
+<td class="p-3 text-center">
+<input class="w-4 h-4 rounded bg-surface-container accent-secondary" type="checkbox"/>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-mono">TXN-BLR-2026-98418902</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">13:52:10 IST (Today)</span>
+</div>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Shubha Sundaram</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RR: 1049281744 • HAL 2nd Stage</span>
+</div>
+</td>
+<td class="p-3 text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface font-mono">₹4,890.00</span>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Google Pay / HDFC Switch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">UTR: 428909182390</span>
+</div>
+</td>
+<td class="p-3">
+<div class="inline-flex flex-col">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-tertiary-container text-tertiary w-fit">
+                    Verification Pending
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Webhook dropped, unconfirmed</span>
+</div>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                    Verify NPCI
+                  </button>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Bank Timeout / Delayed UTR -->
+<tr class="hover:bg-surface-container-high/40 transition-colors cursor-pointer">
+<td class="p-3 text-center">
+<input class="w-4 h-4 rounded bg-surface-container accent-secondary" type="checkbox"/>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-mono">TXN-BLR-2026-98411099</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:30:45 IST (Today)</span>
+</div>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Vasanth Kumar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RR: 1088219031 • CMH Road</span>
+</div>
+</td>
+<td class="p-3 text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface font-mono">₹11,450.00</span>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">HDFC NetBanking Direct</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">UTR: Pending ACK</span>
+</div>
+</td>
+<td class="p-3">
+<div class="inline-flex flex-col">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-secondary-container text-on-secondary w-fit">
+                    Bank Timeout
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Debit success, no ACK to BESCOM</span>
+</div>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                    Force Ledger
+                  </button>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Tariff Discrepancy -->
+<tr class="hover:bg-surface-container-high/40 transition-colors cursor-pointer">
+<td class="p-3 text-center">
+<input class="w-4 h-4 rounded bg-surface-container accent-secondary" type="checkbox"/>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-mono">TXN-BLR-2026-98399104</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11:15:02 IST (Today)</span>
+</div>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Pooja N. Hegde</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RR: 1019283401 • Doopanahalli</span>
+</div>
+</td>
+<td class="p-3 text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface font-mono">₹2,401.00</span>
+<span class="font-label-sm text-label-sm text-error block">Billed: ₹2,450</span>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Paytm Aggregator / ICICI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">UTR: 428900192081</span>
+</div>
+</td>
+<td class="p-3">
+<div class="inline-flex flex-col">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-primary-fixed w-fit">
+                    Tariff Mismatch
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">₹49 Solar Rebate discrepancy</span>
+</div>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+                    Re-Audit
+                  </button>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Second Verification Pending -->
+<tr class="hover:bg-surface-container-high/40 transition-colors cursor-pointer">
+<td class="p-3 text-center">
+<input class="w-4 h-4 rounded bg-surface-container accent-secondary" type="checkbox"/>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-mono">TXN-BLR-2026-98380291</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">09:44:11 IST (Today)</span>
+</div>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">M/s Greenline Tech Labs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RR: 1098492019 • Indiranagar 100ft Rd</span>
+</div>
+</td>
+<td class="p-3 text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface font-mono">₹4,118.00</span>
+</td>
+<td class="p-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">NPCI Bharat BillPay / SBI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">UTR: 428989102941</span>
+</div>
+</td>
+<td class="p-3">
+<div class="inline-flex flex-col">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-tertiary-container text-tertiary w-fit">
+                    Verification Pending
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Sync delayed via SBI switch</span>
+</div>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                    Verify NPCI
+                  </button>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Metadata -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span>Row count: 5 of 5 flagged records</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface">Auto-reconciliation rules applied: <strong class="text-secondary">v4.8.2</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-outline opacity-50 cursor-not-allowed" disabled="" type="button">Previous</button>
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-bold" type="button">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-outline opacity-50 cursor-not-allowed" disabled="" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Detail Inspection Side Drawer Pane (Spans 4 cols on XL) -->
+<div class="xl:col-span-4 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-lg sticky top-20">
+<!-- Drawer Header -->
+<div class="flex items-center justify-between pb-2 border-b-0">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Transaction Inspection</span>
+<span class="font-mono font-label-sm text-label-sm text-tertiary">TXN-BLR-2026-98421038</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-semibold">Live Audit</span>
+</div>
+<!-- Consumer & Account Quick Card -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Consumer Profile</span>
+<span class="font-label-sm text-label-sm text-tertiary">LT-2(a) Domestic</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ramesh K. Rao</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-mono">RR: 1029384756</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          No. 412, 12th Main, 4th Cross, HAL 2nd Stage, Indiranagar, Ward 112
+        </p>
+<div class="mt-1 pt-1.5 flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span>Bill Demand: <strong class="text-on-surface">₹2,401.00</strong></span>
+<span class="text-error font-semibold">Captured: 2 × ₹2,401.00</span>
+</div>
+</div>
+<!-- Dual JSON Webhook Comparison Pane -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-semibold uppercase tracking-wider text-tertiary">Payload Ledger Diff</span>
+<span>Δ Timestamp: +120ms</span>
+</div>
+<div class="grid grid-cols-2 gap-1.5 font-mono text-[11px] leading-tight">
+<!-- NPCI Switch Payload -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex flex-col gap-1 overflow-x-auto text-on-surface-variant">
+<div class="flex items-center justify-between font-bold text-tertiary mb-1">
+<span>NPCI / UPI SWITCH</span>
+<span class="text-[10px] px-1 rounded bg-tertiary-container text-tertiary">200 OK</span>
+</div>
+<div>{</div>
+<div class="pl-2">"rrn": "<span class="text-on-surface font-semibold">428901928471</span>",</div>
+<div class="pl-2">"status": "<span class="text-secondary font-bold">SUCCESS</span>",</div>
+<div class="pl-2">"amt": <span class="text-on-surface">2401.00</span>,</div>
+<div class="pl-2">"bank_ref": "AXIS90123",</div>
+<div class="pl-2 text-error font-semibold">"dup_count": 2,</div>
+<div class="pl-2">"gw": "PhonePe"</div>
+<div>}</div>
+</div>
+<!-- BESCOM Billing Engine Payload -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex flex-col gap-1 overflow-x-auto text-on-surface-variant">
+<div class="flex items-center justify-between font-bold text-secondary mb-1">
+<span>BESCOM DB LEDGER</span>
+<span class="text-[10px] px-1 rounded bg-error-container text-on-error-container">LOCKED</span>
+</div>
+<div>{</div>
+<div class="pl-2">"acct_id": "1029384756",</div>
+<div class="pl-2">"demand": <span class="text-on-surface">2401.00</span>,</div>
+<div class="pl-2">"state": "<span class="text-error font-bold">HOLD_DUP</span>",</div>
+<div class="pl-2">"credit_1": "POSTED",</div>
+<div class="pl-2 text-error font-semibold">"credit_2": "PEND_REV",</div>
+<div class="pl-2">"bal": "0.00"</div>
+<div>}</div>
+</div>
+</div>
+</div>
+<!-- Root Cause Analysis Banner -->
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Root Cause Identification</span>
+<p class="text-on-surface-variant text-[12px] leading-normal mt-0.5">
+            Customer app triggered a retry at 14:18:22 after an initial 504 gateway timeout. Both payment debits succeeded at Axis Bank UPI gateway. The second ledger entry of ₹2,401.00 is redundant and eligible for instantaneous reversal.
+          </p>
+</div>
+</div>
+<!-- 1-Click Operational Resolution Actions -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold shadow-md hover:brightness-105 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment_return</span>
+<span>Initiate Auto-Refund via BBPS Rail (₹2,401.00)</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-surface-container-high text-tertiary font-label-md text-label-md hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">credit_score</span>
+<span>Force Ledger Credit &amp; Send Consumer SMS</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1 pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+            Authenticated Officer: R. Rao
+          </span>
+<a class="text-tertiary hover:underline" href="#">Full Payload Log (.json)</a>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

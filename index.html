@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BESCOM Next — Prototype</title>
+<style>
+  body { margin:0; background:#081425; color:#d8e3fb; font-family: Inter, system-ui, sans-serif; }
+  header { padding: 40px 24px 16px; text-align:center; }
+  header h1 { font-size: 24px; font-weight: 600; margin: 0 0 8px; }
+  header p { color:#9aa3b8; margin:0; font-size: 14px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px; padding: 24px 24px 60px; max-width: 1100px; margin: 0 auto; }
+  .card { display:block; text-decoration:none; color:inherit; background:#111c2d; border:1px solid #2a3548; border-radius:12px; overflow:hidden; transition: transform .15s ease, border-color .15s ease; }
+  .card:hover { transform: translateY(-2px); border-color:#565e74; }
+  .card img { width:100%; display:block; aspect-ratio: 9/16; object-fit: cover; background:#040e1f; }
+  .card-label { padding: 12px 14px; font-size: 13px; font-weight: 500; }
+  footer { text-align:center; padding: 24px; color:#565e74; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>BESCOM Next — Consumer app prototype</h1>
+  <p>Click any screen to open the interactive Stitch prototype</p>
+</header>
+<div class="grid">
+      <a class="card" href="authentication_otp_verification/index.html">
+        <img src="authentication_otp_verification/screen.png" alt="Login — OTP verification" loading="lazy"/>
+        <div class="card-label">Login — OTP verification</div>
+      </a>
+      <a class="card" href="overview_analytics_dashboard/index.html">
+        <img src="overview_analytics_dashboard/screen.png" alt="Consumer dashboard & bill overview" loading="lazy"/>
+        <div class="card-label">Consumer dashboard & bill overview</div>
+      </a>
+      <a class="card" href="1_click_upi_payment_receipt_confirmation/index.html">
+        <img src="1_click_upi_payment_receipt_confirmation/screen.png" alt="1-tap UPI payment" loading="lazy"/>
+        <div class="card-label">1-tap UPI payment</div>
+      </a>
+      <a class="card" href="instant_payment_success_download_receipt/index.html">
+        <img src="instant_payment_success_download_receipt/screen.png" alt="Instant payment success + receipt" loading="lazy"/>
+        <div class="card-label">Instant payment success + receipt</div>
+      </a>
+      <a class="card" href="outage_reporting_gis_map_tracker/index.html">
+        <img src="outage_reporting_gis_map_tracker/screen.png" alt="Outage reporting & GIS tracker" loading="lazy"/>
+        <div class="card-label">Outage reporting & GIS tracker</div>
+      </a>
+      <a class="card" href="outage_dispatch_field_management_console/index.html">
+        <img src="outage_dispatch_field_management_console/screen.png" alt="Admin: field dispatch console" loading="lazy"/>
+        <div class="card-label">Admin: field dispatch console</div>
+      </a>
+      <a class="card" href="exception_reconciliation_manager/index.html">
+        <img src="exception_reconciliation_manager/screen.png" alt="Admin: reconciliation exceptions" loading="lazy"/>
+        <div class="card-label">Admin: reconciliation exceptions</div>
+      </a>
+</div>
+<footer>Prototype for interview walkthrough · BESCOM Next / BESCOM Ops Console</footer>
+</body>
+</html>
